@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numberates</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="./script.js"></script>
+</head>
+<body >
+    <div class="guess" id="init">
+        <div style="display: flex;justify-content:flex-end;">
+            <div class="attempt">
+                <h3>NO.OF.ATTEMPTS</h3>
+                <br>
+                <div class="attempt-num">
+                    <h4 id="remaining"></h4>
+                </div>
+            </div>
+        </div>
+
+        <h1>NUMBER GUESSING GAME</h1>
+        <hr>
+        <br>
+        <div class="image">'
+            <img class="image" src="./images/skate1.svg" alt="" srcset="">
+        </div>
+        <div class="main">
+            <div class="guess-input">
+                <div class="guess-number">
+                    <h3>Guess the number between 1-100</h3>
+                    <div class="tri"></div>
+                    <div style="padding:50px 0px">
+                        <label for="">Enter the number:</label>
+                        <input class="inp" style="margin-left: 20px;" type="text" name="" id="input_value">
+                    </div>
+                    <button onclick="validNum(document.getElementById('input_value').value)">Check</button>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <h3 id="msg"></h3>
+    </div>
+    <div class="main1">
+        <div class="main" id="win">
+            <h1>NUMBER GUESSING GAME</h1>
+            <hr>
+            <br>
+            <img class="image1" src="./images/skate1.svg" alt="" srcset="">
+            <div class="guess-input">
+                <div class="guess-number">
+                    <h1><img style="width: 200px;height: 200px; position: relative; top:60px" src="./images/party.svg" alt="" srcset=""></h1>
+                    <div class="tri"></div>
+                    <br>
+                    <h1 style="width: 50%; color:rgb(252, 162, 162);">CONGRATS YOU HAVE WON THE GAME</h1>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main2">
+        <div class="main" id="loose">
+            <h1>NUMBER GUESSING GAME</h1>
+            <hr>
+            <br>
+            <img class="image1" src="./images/skate1.svg" alt="" srcset="">
+            <div class="guess-input">
+                <div class="guess-number">
+                    <h1><img style="width: 200px;height: 200px; position: relative; top:60px"" src="./images/sad.svg" alt="" srcset=""></h1>
+                    <div class="tri"></div>
+                    <br>
+                    <h1 style="color:rgb(252, 162, 162);">SORRY BETTER LUCK NEXT TIME</h1>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

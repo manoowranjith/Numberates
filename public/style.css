@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    /* background-image: linear-gradient(to right,rgba(255, 155, 155),rgba(181, 255, 214, 0.808)); */
+    background-image: linear-gradient(to bottom,rgb(255, 183, 155),rgb(248, 255, 181));
+    width: 100vw;
+    height:100vh;
+    padding:30px;
+}
+.attempt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 10vw;
+}
+.attempt-num{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(250, 215, 151);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+hr{
+    background-image: linear-gradient(to right,rgba(255, 255, 255, 0),rgba(255, 255, 255, 1),rgba(255, 255, 255, 0));
+    height: 2px;
+    border: none;
+    margin:auto;
+    width: 50%;
+}
+.image{
+    position:fixed;
+    top:40%;
+    width: 350px;
+}
+.image1{
+    position:fixed;
+    top:40%;
+    left:1%;
+    width: 350px;
+}
+.main, .main1, .main2{
+    display: flex;
+    justify-content: center;
+}
+.guess-input{
+   text-align: center;
+   background-color: rgb(255, 250, 243);
+   border-radius: 25px;
+   padding:10px;
+}
+.tri{
+    width: 0;
+	height: 0;
+	border-left: 25vw solid transparent;
+	border-right: 25vw solid transparent;
+	border-top: 50px solid #D1D2E0; 
+}
+.guess-number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.guess-number >h3{
+    padding: 50px 0px;
+}
+.inp{
+    background: linear-gradient(to right,rgb(155, 165, 255),rgb(181, 255, 212));
+    border-radius: 0px 10px 10px 0px;
+    border:none;
+    outline: none;
+    width: 300px;
+    height: 50px;
+    padding:5px;
+}
+button{
+    letter-spacing: 2px;
+    padding:15px 40px;
+    background-color: #F9B898;
+    color: white;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#msg{
+    margin-top:15px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#win,#loose{
+    margin-top:20vh;
+}
